@@ -1,0 +1,258 @@
+/* Parte de arriba de mi pag-index */
+
+.main-wrapper {
+    display: grid;
+    grid-template-areas: 
+    
+    "col"
+    "nav"
+    "header"
+    "main"
+    "footer";
+    max-width: 1000px;
+    margin: auto;
+}
+header, nav, main, footer {
+    border: solid 2px grey;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    padding-top: 10px;
+    grid-area: nav;
+
+    }
+    
+    
+    nav a {
+    margin:5px;
+    
+    }   
+
+
+   .col {
+    color: rgb(97, 97, 201);
+    text-align: center;
+    grid-area: col;
+}
+
+
+
+.section1 {
+    color: rgb(58, 53, 53);
+    text-align: center;
+    max-width: 200px;
+    display:contents;
+    justify-content: space-evenly;
+    margin: auto;
+    
+}
+
+.hola {
+    text-align: center;
+} 
+
+.fot1 {
+    height:300px;
+    
+    text-align: center;
+    
+    
+    } 
+
+    .section2 {
+        color: rgb(58, 53, 53);
+      text-align: center;
+       flex-direction: row;
+       flex-wrap: wrap;
+      
+       
+     } 
+
+     .section3 {
+        color: rgb(58, 53, 53);
+       text-align: center;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+    
+    }
+
+
+    .section4 {
+        color: rgb(58, 53, 53);
+    text-align: center;
+    
+      } 
+
+  
+body {
+    background-color: rgb(179, 214, 179);
+}
+header {
+    
+    color: rgb(146, 146, 204);
+    background-color: white;  
+    height: 15opx;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: header;
+    
+    }
+h2 {
+    text-align: center;
+}  
+
+
+
+.fot2{ 
+
+    text-align: center;
+
+}
+
+ 
+  footer {
+      background-color: rgb(165, 156, 156);
+      text-align: center;
+      height: 20px;
+      grid-area: footer;
+  }   
+
+
+/* archivo de bienestar */
+/* nav */
+
+
+.tex2 {
+    color: rgb(58, 53, 53);
+
+}
+
+
+/* archivo sabias.. */
+.tit3 {
+   
+    color: rgb(58, 53, 53);
+}
+#let {
+    color: rgb(58, 53, 53);
+    
+}
+
+/* archivo Musica */
+
+main {
+
+    grid-area: main;
+}
+main h1 {
+    color: rgb(97, 97, 201)
+}
+#contenedor {
+    border: 3px solid grey ; 
+    height: 0px;
+    padding-bottom: 56.25%;
+    position: relative;
+            
+    }
+
+    #contenedor iframe {
+        position: absolute ;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+    }
+    .video-wrapper {
+       width: 50%; 
+    }
+    h3 {
+        text-align: center;
+    }
+    
+
+
+
+/* convertir en responsive la pagina  */
+
+
+
+@media screen and (max-width: 768px ) {
+
+     
+    header {
+    
+    
+    flex-direction: column;
+
+
+        }
+body {
+    background-color: rgb(156, 206, 144);
+}
+           
+}
+/* agregando transicion y animacion */
+
+nav {
+    
+    width: 1000px;
+    height: 50px;
+}
+nav:hover {
+    background: rgb(148, 148, 201);
+    transition: 2s;
+}
+
+header:hover {
+    background: rgb(138, 220, 245);
+    transition: 2s;
+    
+
+}
+
+.col {
+    height: 140px;
+    width: 140px;
+    background: white;
+    animation-name: animacion;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    position: relative;
+}
+@keyframes animacion {
+ 0% { background: rgb(226, 206, 209);
+ }
+ 25% { background: rgb(156, 162, 199);}
+ 50% { background: rgb(103, 189, 146);}
+ 75% { background: rgb(206, 173, 161);}
+ 100% {background: rgb(165, 140, 155);}
+
+
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+                                        
+    
+
+
+    
