@@ -16,6 +16,9 @@ header, nav, main, footer {
     border: solid 2px grey;
 }
 
+header {
+    background-color: rgb(231, 229, 229);
+}
 
 nav {
     display: flex;
@@ -92,17 +95,7 @@ nav {
 body {
     background-color: rgb(179, 214, 179);
 }
-header {
-    
-    color: rgb(146, 146, 204);
-    background-color: white;  
-    height: 15opx;
-    flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;
-    grid-area: header;
-    
-    }
+
 h2 {
     text-align: center;
 }  
@@ -119,7 +112,7 @@ h2 {
   footer {
       background-color: rgb(165, 156, 156);
       text-align: center;
-      height: 20px;
+      height: 30px;
       grid-area: footer;
   }   
 
@@ -167,10 +160,12 @@ main h1 {
         left: 0;
         height: 100%;
         width: 100%;
+        
 
     }
     .video-wrapper {
-       width: 50%; 
+       width: 50%;
+       
     }
     h3 {
         text-align: center;
@@ -205,10 +200,7 @@ nav {
     width: 1000px;
     height: 50px;
 }
-nav:hover {
-    background: rgb(148, 148, 201);
-    transition: 2s;
-}
+
 
 header:hover {
     background: rgb(138, 220, 245);
