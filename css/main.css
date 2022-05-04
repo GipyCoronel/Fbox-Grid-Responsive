@@ -13,7 +13,7 @@
     margin: auto;
 }
 header, nav, main, footer {
-    border: solid 2px grey;
+    border: solid 2px rgb(132, 211, 158);
 }
 
 header {
@@ -26,11 +26,18 @@ nav {
     height: 50px;
     padding-top: 10px;
     grid-area: nav;
+    
 
+    }
+    .navbar-nav {
+        
+        align-items: end;
+        background-color: rgb(202, 198, 198);
     }
     
     
     nav a {
+        
     margin:5px;
     
     }   
@@ -195,11 +202,7 @@ body {
 }
 /* agregando transicion y animacion */
 
-nav {
-    
-    width: 1000px;
-    height: 50px;
-}
+
 
 
 header:hover {
