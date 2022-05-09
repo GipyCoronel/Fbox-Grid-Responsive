@@ -1,5 +1,3 @@
-/* Parte de arriba de mi pag-index */
-
 .main-wrapper {
     display: grid;
     grid-template-areas: 
@@ -26,7 +24,9 @@ nav {
     height: 50px;
     padding-top: 10px;
     grid-area: nav;
-    
+     a {
+        margin:5px;   
+     }
 
     }
     .navbar-nav {
@@ -34,20 +34,7 @@ nav {
         align-items: end;
         background-color: rgb(202, 198, 198);
     }
-    
-    
-    nav a {
-        
-    margin:5px;
-    
-    }   
 
-
-   .col {
-    color: rgb(97, 97, 201);
-    text-align: center;
-    grid-area: col;
-}
 
 
 
@@ -93,7 +80,7 @@ nav {
 
 
     .section4 {
-        color: rgb(58, 53, 53);
+        color:  rgb(58, 53, 53);
     text-align: center;
     
       } 
@@ -102,12 +89,7 @@ nav {
 body {
     background-color: rgb(179, 214, 179);
 }
-
-h2 {
-    text-align: center;
-}  
-
-
+ 
 
 .fot2{ 
 
@@ -150,9 +132,7 @@ main {
 
     grid-area: main;
 }
-main h1 {
-    color: rgb(97, 97, 201)
-}
+
 #contenedor {
     border: 3px solid grey ; 
     height: 0px;
@@ -174,9 +154,7 @@ main h1 {
        width: 50%;
        
     }
-    h3 {
-        text-align: center;
-    }
+   
     
 
 
@@ -232,22 +210,5 @@ header:hover {
 
 }
 
+$color-primary:rgb(58, 53, 53);
 
-
-
-
-
-
-
-    
-
-
-
-
-
-
-                                        
-    
-
-
-    

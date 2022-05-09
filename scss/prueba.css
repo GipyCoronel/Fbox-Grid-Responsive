@@ -1,0 +1,220 @@
+.main-wrapper {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "col"
+ "nav"
+ "header"
+ "main"
+ "footer";
+  max-width: 1000px;
+  margin: auto;
+}
+
+header, nav, main, footer {
+  border: solid 2px #b3d6b3;
+}
+
+header {
+  background-color: #e7e5e5;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 50px;
+  padding-top: 10px;
+ 
+  grid-area: nav;
+}
+
+nav a {
+  margin: 5px;
+}
+
+.navbar-nav {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  background-color: #cac6c6;
+}
+
+.section1 {
+  color: #3a3535;
+  text-align: center;
+  max-width: 200px;
+  display: contents;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: auto;
+}
+
+.hola {
+  text-align: center;
+}
+
+.fot1 {
+  height: 300px;
+  text-align: center;
+}
+
+.section2 {
+  color: #3a3535;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section3 {
+  color: #3a3535;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section4 {
+  color: #3a3535;
+  text-align: center;
+}
+
+body {
+  background-color: #b3d6b3;
+}
+
+.fot2 {
+  text-align: center;
+}
+
+footer {
+  background-color: #a59c9c;
+  text-align: center;
+  height: 30px;
+ 
+  grid-area: footer;
+}
+
+/* archivo de bienestar */
+/* nav */
+.tex2 {
+  color: #3a3535;
+}
+
+/* archivo sabias.. */
+.tit3 {
+  color: #3a3535;
+}
+
+#let {
+  color: #3a3535;
+}
+
+/* archivo Musica */
+main {
+  
+  grid-area: main;
+}
+
+#contenedor {
+  border: 3px solid grey;
+  height: 0px;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+#contenedor iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.video-wrapper {
+  width: 50%;
+}
+
+/* convertir en responsive la pagina  */
+@media screen and (max-width: 768px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body {
+    background-color: #9cce90;
+  }
+}
+
+/* agregando transicion y animacion */
+header:hover {
+  background: #8adcf5;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.coll {
+  height: 140px;
+  width: 140px;
+  background: white;
+  -webkit-animation-name: animacion;
+          animation-name: animacion;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  position: relative;
+}
+
+@-webkit-keyframes animacion {
+  0% {
+    background: #e2ced1;
+  }
+  25% {
+    background: #9ca2c7;
+  }
+  50% {
+    background: #67bd92;
+  }
+  75% {
+    background: #ceada1;
+  }
+  100% {
+    background: #a58c9b;
+  }
+}
+
+@keyframes animacion {
+  0% {
+    background: #e2ced1;
+  }
+  25% {
+    background: #9ca2c7;
+  }
+  50% {
+    background: #67bd92;
+  }
+  75% {
+    background: #ceada1;
+  }
+  100% {
+    background: #a58c9b;
+  }
+}
+/*# sourceMappingURL=prueba.css.map */
