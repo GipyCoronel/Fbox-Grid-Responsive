@@ -98,9 +98,9 @@ body {
 
  
   footer {
-      background-color: rgb(165, 156, 156);
+      background-color: rgb(190, 184, 184);
       text-align: center;
-      height: 30px;
+      height: 50px;
       grid-area: footer;
   }   
 
@@ -156,27 +156,6 @@ main {
    
     
 
-
-
-/* convertir en responsive la pagina  */
-
-
-
-@media screen and (max-width: 768px ) {
-
-     
-    header {
-    
-    
-    flex-direction: column;
-
-
-        }
-body {
-    background-color: rgb(156, 206, 144);
-}
-           
-}
 /* agregando transicion y animacion */
 
 
@@ -209,15 +188,26 @@ header:hover {
 
 }
 
-// Maps
-$redes: (
-    facebook:rgb(75, 65, 167)
-    instagram: rgb(192, 98, 60)
-);
-@each $red, $color in $redes {
-    .red-#{$red}{
-        color: $color
-    }
+
+
+/* convertir en responsive la pagina  */
+
+
+
+@media screen and (max-width: 768px ) {
+
+     
+    header {
+    
+    
+    flex-direction: column;
+
+
+        }
+body {
+    background-color: rgb(156, 206, 144);
+}
+           
 }
     
 

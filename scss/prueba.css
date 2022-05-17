@@ -1,11 +1,7 @@
 .main-wrapper {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "col"
- "nav"
- "header"
- "main"
- "footer";
+      grid-template-areas: "col" "nav" "header" "main" "footer";
   max-width: 1000px;
   margin: auto;
 }
@@ -28,7 +24,8 @@ nav {
           flex-direction: row;
   height: 50px;
   padding-top: 10px;
- 
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: nav;
 }
 
@@ -63,23 +60,9 @@ nav a {
   text-align: center;
 }
 
-.section2 {
+.section2, .section3 {
   color: #3a3535;
   text-align: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.section3 {
-  color: #3a3535;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -102,10 +85,11 @@ body {
 }
 
 footer {
-  background-color: #a59c9c;
+  background-color: #beb8b8;
   text-align: center;
-  height: 30px;
- 
+  height: 50px;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
   grid-area: footer;
 }
 
@@ -126,7 +110,8 @@ footer {
 
 /* archivo Musica */
 main {
-  
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: main;
 }
 
@@ -147,19 +132,6 @@ main {
 
 .video-wrapper {
   width: 50%;
-}
-
-/* convertir en responsive la pagina  */
-@media screen and (max-width: 768px) {
-  header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  body {
-    background-color: #9cce90;
-  }
 }
 
 /* agregando transicion y animacion */
@@ -215,6 +187,19 @@ header:hover {
   }
   100% {
     background: #a58c9b;
+  }
+}
+
+/* convertir en responsive la pagina  */
+@media screen and (max-width: 768px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body {
+    background-color: #9cce90;
   }
 }
 /*# sourceMappingURL=prueba.css.map */
