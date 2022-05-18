@@ -1,7 +1,11 @@
 .main-wrapper {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "col" "nav" "header" "main" "footer";
+      grid-template-areas: "col"
+ "nav"
+ "header"
+ "main"
+ "footer";
   max-width: 1000px;
   margin: auto;
 }
@@ -24,8 +28,7 @@ nav {
           flex-direction: row;
   height: 50px;
   padding-top: 10px;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  
   grid-area: nav;
 }
 
@@ -87,10 +90,12 @@ body {
 footer {
   background-color: #beb8b8;
   text-align: center;
-  height: 50px;
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
+  height: 40px;
+ 
   grid-area: footer;
+  position: relative;
+  bottom: 0%;
+  width: 100%;
 }
 
 /* archivo de bienestar */
@@ -110,24 +115,22 @@ footer {
 
 /* archivo Musica */
 main {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
+ 
   grid-area: main;
 }
 
 #contenedor {
-  border: 3px solid grey;
   height: 0px;
   padding-bottom: 56.25%;
+  text-align: center;
   position: relative;
 }
 
 #contenedor iframe {
-  position: absolute;
   top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
+  position: absolute;
 }
 
 .video-wrapper {
@@ -142,8 +145,6 @@ header:hover {
 }
 
 .coll {
-  height: 140px;
-  width: 140px;
   background: white;
   -webkit-animation-name: animacion;
           animation-name: animacion;
@@ -152,6 +153,11 @@ header:hover {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
   position: relative;
+}
+
+.coll div {
+  height: 140px;
+  width: 140px;
 }
 
 @-webkit-keyframes animacion {
@@ -200,6 +206,27 @@ header:hover {
   }
   body {
     background-color: #9cce90;
+    font-size: 23px;
   }
+}
+
+.container-fluid {
+  background-color: #cac6c6;
+}
+
+a img {
+  border-radius: 6px;
+}
+
+.cambio {
+  font-family: cursive;
+}
+
+footer .red-instagram {
+  color: #c0623c;
+}
+
+footer .red-facebook {
+  color: #4b41a7;
 }
 /*# sourceMappingURL=prueba.css.map */

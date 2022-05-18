@@ -10,7 +10,7 @@
     "main"
     "footer";
     max-width: 1000px;
-    margin: auto;
+   
 }
 header, nav, main, footer {
     border: solid 2px  rgb(179, 214, 179);
@@ -220,6 +220,7 @@ header:hover {
     animation-duration: 5s;
     animation-delay: 1s;
     position: relative;
+    text-align: center;
 }
 @keyframes animacion {
  0% { background: rgb(226, 206, 209);
@@ -231,6 +232,8 @@ header:hover {
 
 
 }
+
+
 
 
 

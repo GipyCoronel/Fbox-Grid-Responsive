@@ -100,8 +100,14 @@ body {
   footer {
       background-color: rgb(190, 184, 184);
       text-align: center;
-      height: 50px;
+      height: 40px;
       grid-area: footer;
+     position: relative;
+      bottom: 0%;
+      width: 100%;
+     
+      
+      
   }   
 
 
@@ -130,33 +136,33 @@ body {
 main {
 
     grid-area: main;
+    
+    
+    
 }
 
 #contenedor {
-    border: 3px solid grey ; 
+    
     height: 0px;
     padding-bottom: 56.25%;
-    position: relative;
-            
+    text-align: center;
+    position:relative;
+   
     }
 
     #contenedor iframe {
-        position: absolute ;
+      
         top: 0;
-        left: 0;
         height: 100%;
         width: 100%;
-        
-
+       position: absolute;
     }
     .video-wrapper {
        width: 50%;
        
     }
-   
-    
 
-/* agregando transicion y animacion */
+    /* agregando transicion y animacion */
 
 
 
@@ -169,13 +175,20 @@ header:hover {
 }
 
 .coll {
-    height: 140px;
-    width: 140px;
     background: white;
     animation-name: animacion;
     animation-duration: 5s;
     animation-delay: 1s;
     position: relative;
+}
+.coll {
+    @mixin size {
+    height: 140px;
+    width: 140px;
+    }
+    div {
+        @include size; 
+    }
 }
 @keyframes animacion {
  0% { background: rgb(226, 206, 209);
@@ -206,13 +219,40 @@ header:hover {
         }
 body {
     background-color: rgb(156, 206, 144);
+    font-size: 23px;
+    
 }
+
            
 }
     
 
 
+.container-fluid{ background-color: rgb(202, 198, 198);}
 
 
+
+
+a img{ border-radius: 6px;
+
+}
+
+
+.cambio{ font-family:cursive}
+
+// Maps
+footer {
+
+$redes: (
+    instagram: rgb(192, 98, 60),
+    facebook:rgb(75, 65, 167),
+);
+@each $red, $color in $redes {
+    .red-#{$red}{
+        color: $color;
+        
+    }
+}
+}
 
 
