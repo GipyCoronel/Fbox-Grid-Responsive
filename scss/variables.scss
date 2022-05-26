@@ -1,1 +1,6 @@
 $color-primary:rgb(58, 53, 53);
+
+@mixin size {
+    height: 140px;
+    width: 140px;
+    }

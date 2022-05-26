@@ -1,16 +1,57 @@
+@media screen and (max-width: 768px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body {
+    background-color: #9cce90;
+    font-size: 23px;
+  }
+}
+
+footer {
+  background-color: #beb8b8;
+  text-align: center;
+  height: 40px;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  bottom: 0%;
+  width: 100%;
+  position: absolute;
+}
+
+footer .red-instagram {
+  color: #c0623c;
+}
+
+footer .red-facebook {
+  color: #4b41a7;
+}
+
+.tama {
+  height: 25px;
+  width: 25px;
+}
+
+.tamaa {
+  height: 30px;
+  width: 30px;
+}
+
 .main-wrapper {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "col"
- "nav"
- "header"
- "main"
- "footer";
-  max-width: 1000px;
+      grid-template-areas: "col" "nav" "header" "main" "footer";
   margin: auto;
 }
 
-header, nav, main, footer {
+header,
+nav,
+main,
+footer {
   border: solid 2px #b3d6b3;
 }
 
@@ -28,7 +69,8 @@ nav {
           flex-direction: row;
   height: 50px;
   padding-top: 10px;
-  
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: nav;
 }
 
@@ -81,60 +123,7 @@ nav a {
 
 body {
   background-color: #b3d6b3;
-}
-
-.fot2 {
-  text-align: center;
-}
-
-footer {
-  background-color: #beb8b8;
-  text-align: center;
-  height: 40px;
- 
-  grid-area: footer;
-  position: relative;
-  bottom: 0%;
-  width: 100%;
-}
-
-/* archivo de bienestar */
-/* nav */
-.tex2 {
-  color: #3a3535;
-}
-
-/* archivo sabias.. */
-.tit3 {
-  color: #3a3535;
-}
-
-#let {
-  color: #3a3535;
-}
-
-/* archivo Musica */
-main {
- 
-  grid-area: main;
-}
-
-#contenedor {
-  height: 0px;
-  padding-bottom: 56.25%;
-  text-align: center;
-  position: relative;
-}
-
-#contenedor iframe {
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-.video-wrapper {
-  width: 50%;
+  height: 100vh;
 }
 
 /* agregando transicion y animacion */
@@ -196,37 +185,78 @@ header:hover {
   }
 }
 
-/* convertir en responsive la pagina  */
-@media screen and (max-width: 768px) {
-  header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  body {
-    background-color: #9cce90;
-    font-size: 23px;
-  }
-}
-
 .container-fluid {
   background-color: #cac6c6;
 }
 
 a img {
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 .cambio {
   font-family: cursive;
 }
 
-footer .red-instagram {
-  color: #c0623c;
+.ClaseCentrado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-footer .red-facebook {
-  color: #4b41a7;
+main {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+#contenedor {
+  height: 0px;
+  padding-bottom: 56.25%;
+  text-align: center;
+  position: relative;
+}
+
+#contenedor iframe {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.video-wrapper {
+  width: 50%;
+}
+
+/* archivo de bienestar */
+/* nav */
+.tex2 {
+  color: #3a3535;
+}
+
+/* archivo sabias.. */
+.tit3 {
+  color: #3a3535;
+}
+
+#let {
+  color: #3a3535;
+}
+
+.fot2 {
+  text-align: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 /*# sourceMappingURL=prueba.css.map */

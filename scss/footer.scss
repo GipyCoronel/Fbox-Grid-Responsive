@@ -1,0 +1,33 @@
+footer {
+    background-color: rgb(190, 184, 184);
+    text-align: center;
+    height: 40px;
+    grid-area: footer;
+    bottom: 0%;
+    width: 100%;
+    position: absolute;
+}
+// Maps
+footer {
+
+    $redes: (
+        instagram: rgb(192, 98, 60),
+        facebook:rgb(75, 65, 167),
+    );
+    @each $red, $color in $redes {
+        .red-#{$red}{
+            color: $color;
+            
+        }
+    }
+    }
+     .tama {
+         height: 25px;
+         width: 25px;
+     }
+     .tamaa {
+        height: 30px;
+        width: 30px;
+    }
+  
+  

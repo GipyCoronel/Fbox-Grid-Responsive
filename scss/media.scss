@@ -1,0 +1,19 @@
+
+// haciendo responsive la pagina.
+@media screen and (max-width: 768px ) {
+
+     
+    header {
+    
+    
+    flex-direction: column;
+
+
+        }
+body {
+    background-color: rgb(156, 206, 144);
+    font-size: 23px;
+    
+}
+
+}
