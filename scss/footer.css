@@ -1,0 +1,27 @@
+footer {
+  background-color: #beb8b8;
+  text-align: center;
+  height: 35px;
+  grid-area: footer;
+  bottom: 0%;
+  width: 100%;
+}
+
+footer .red-instagram {
+  color: #c0623c;
+}
+
+footer .red-facebook {
+  color: #4b41a7;
+}
+
+.tama {
+  height: 25px;
+  width: 25px;
+}
+
+.tamaa {
+  height: 30px;
+  width: 30px;
+}
+/*# sourceMappingURL=footer.css.map */
