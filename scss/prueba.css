@@ -7,16 +7,20 @@
   }
   body {
     background-color: #9cce90;
-    font-size: 23px;
+    font-size: 25px;
   }
   h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
   h2 {
     font-size: 40px;
   }
   h3 {
-    font-size: 40px;
+    font-size: 35px;
+  }
+  .grid {
+    -ms-grid-columns: (100%)[1];
+        grid-template-columns: repeat(1, 100%);
   }
 }
 
@@ -273,8 +277,8 @@ main {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 450px 450px 450px;
+      grid-template-columns: 450px 450px 450px;
   text-align: center;
 }
 

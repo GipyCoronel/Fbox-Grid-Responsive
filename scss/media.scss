@@ -12,16 +12,19 @@
         }
 body {
     background-color: rgb(156, 206, 144);
-    font-size: 23px;
+    font-size: 25px;
 }
 h1 {
-    font-size: 50px;
+    font-size: 45px;
 }
 h2 {
     font-size: 40px;
 }
 h3 {
     font-size: 35px;
+}
+.grid {
+    grid-template-columns: repeat(1,100%);
 }
 
 }
