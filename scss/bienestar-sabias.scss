@@ -3,6 +3,7 @@
 
 .tex2 {
     color: rgb(58, 53, 53);
+    height: 100%;
 
 }
 
@@ -22,15 +23,25 @@
     text-align: center;
 
 }
+.man {
+    height: 100%;
+}
 
 .grid {
     display: grid;
-    grid-template-columns: 450px 450px 450px;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
     text-align: center;
+    margin-top: 100px;
     }
+
+    
 .imagen {
     width: 200px;
     margin: auto;
     padding: 7px;
    
+}
+#top {
+    margin-top: 50px;
 }

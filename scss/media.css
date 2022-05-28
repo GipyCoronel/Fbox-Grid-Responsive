@@ -18,9 +18,10 @@
   h3 {
     font-size: 35px;
   }
+  
   .grid {
-    -ms-grid-columns: (100%)[1];
-        grid-template-columns: repeat(1, 100%);
+  
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 /*# sourceMappingURL=media.css.map */

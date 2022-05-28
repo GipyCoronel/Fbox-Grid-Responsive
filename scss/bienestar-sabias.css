@@ -2,6 +2,7 @@
 /* nav */
 .tex2 {
   color: #3a3535;
+  height: 100%;
 }
 
 /* archivo sabias.. */
@@ -17,17 +18,27 @@
   text-align: center;
 }
 
+.man {
+  height: 100%;
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 450px 450px 450px;
-      grid-template-columns: 450px 450px 450px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  width: 100%;
   text-align: center;
+  margin-top: 100px;
 }
 
 .imagen {
   width: 200px;
   margin: auto;
   padding: 7px;
+}
+
+#top {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=bienestar-sabias.css.map */
