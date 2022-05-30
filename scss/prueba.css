@@ -1,35 +1,14 @@
-@media screen and (max-width: 768px) {
-  header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  body {
-    background-color: #9cce90;
-    font-size: 25px;
-  }
-  h1 {
-    font-size: 45px;
-  }
-  h2 {
-    font-size: 40px;
-  }
-  h3 {
-    font-size: 35px;
-  }
-  .grid {
-    
-        grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 footer {
   background-color: #beb8b8;
-  text-align: center;
   height: 35px;
-  grid-area: footer;
   width: 100%;
+  bottom: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .red-instagram {
@@ -53,11 +32,7 @@ footer .red-facebook {
 .main-wrapper {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "col"
- "nav"
- "header"
- "main"
- "footer";
+      grid-template-areas: "col" "nav" "header" "main" "footer";
   margin: auto;
 }
 
@@ -82,6 +57,8 @@ nav {
           flex-direction: row;
   height: 50px;
   padding-top: 10px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: nav;
 }
 
@@ -138,7 +115,9 @@ h1 {
 
 body {
   background-color: #b3d6b3;
-  height: 100vh;
+  top: 0%;
+  margin: 0%;
+  padding: 0%;
 }
 
 /* agregando transicion y animacion */
@@ -231,7 +210,8 @@ a img {
 }
 
 main {
-  
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: main;
 }
 
@@ -280,19 +260,51 @@ main {
 .grid {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   width: 100%;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .imagen {
   width: 200px;
-  margin: auto;
   padding: 7px;
 }
 
 #top {
   margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #z {
+    z-index: 97;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body {
+    font-size: 25px;
+  }
+  header h1 {
+    font-size: 40px;
+    padding: 0%;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 30px;
+  }
 }
 /*# sourceMappingURL=prueba.css.map */
