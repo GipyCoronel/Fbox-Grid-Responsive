@@ -298,7 +298,7 @@ a img {
             flex-direction: column;
   }
   body {
-    font-size: 25px;
+    font-size: 23px;
   }
   header h1 {
     font-size: 40px;
@@ -309,6 +309,9 @@ a img {
   }
   h3 {
     font-size: 30px;
+  }
+  .font {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=prueba.css.map */
