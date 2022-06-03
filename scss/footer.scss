@@ -2,12 +2,12 @@ footer {
     background-color: rgb(190, 184, 184);
     height: 35px;
     width: 100%;
-    bottom: 1px;
+    position: absolute;
+    bottom: 0;
     display: flex;
     justify-content: center;
 }
-// Maps
-footer {
+
 
     $redes: (
         instagram: rgb(192, 98, 60),
@@ -19,14 +19,14 @@ footer {
             
         }
     }
-    }
+    
      .tama {
          height: 25px;
          width: 25px;
      }
      .tamaa {
         height: 30px;
-        width: 30px;
-    }
+        width: 30px;}
+
   
   

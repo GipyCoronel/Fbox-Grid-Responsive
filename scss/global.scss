@@ -1,13 +1,15 @@
-.main-wrapper {
-    display: grid;
-    grid-template-areas:
-         "col"
-        "nav"
-        "header"
-        "main"
-        "footer";
-    margin: auto;
+html{
+    position: relative;
+    min-height: 100%;
 }
+
+body {
+    background-color: rgb(179, 214, 179);
+    top: 0%;
+    margin: 0%;
+    padding: 0%;
+}
+
 
 header,
 nav,
@@ -25,7 +27,6 @@ nav {
     flex-direction: row;
     height: 50px;
     padding-top: 10px;
-    grid-area: nav;
 
     a {
         margin: 5px;
@@ -58,10 +59,10 @@ h1 {
 
 .fot1 {
     height: 300px;
-
     text-align: center;
-
-
+}
+.fot1 img {
+max-width: 100%;
 }
 
 .section2 {
@@ -83,14 +84,8 @@ h1 {
     text-align: center;
 
 }
-
-
-body {
-    background-color: rgb(179, 214, 179);
-    
-    top: 0%;
-    margin: 0%;
-    padding: 0%;
+.fot2 {
+    margin-bottom: 2rem;
 }
 
 /* agregando transicion y animacion */
@@ -108,6 +103,7 @@ header:hover {
     animation-duration: 5s;
     animation-delay: 1s;
     position: relative;
+    grid-area: col;
 
     div {
         @include size;
@@ -168,4 +164,5 @@ a img {
 .teo {
     width: 250px;
     padding: 10px; 
+    margin-bottom: 2rem;
 }

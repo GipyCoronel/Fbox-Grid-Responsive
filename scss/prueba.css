@@ -2,7 +2,8 @@ footer {
   background-color: #beb8b8;
   height: 35px;
   width: 100%;
-  bottom: 1px;
+  position: absolute;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,11 +12,11 @@ footer {
           justify-content: center;
 }
 
-footer .red-instagram {
+.red-instagram {
   color: #c0623c;
 }
 
-footer .red-facebook {
+.red-facebook {
   color: #4b41a7;
 }
 
@@ -29,11 +30,16 @@ footer .red-facebook {
   width: 30px;
 }
 
-.main-wrapper {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "col" "nav" "header" "main" "footer";
-  margin: auto;
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: #b3d6b3;
+  top: 0%;
+  margin: 0%;
+  padding: 0%;
 }
 
 header,
@@ -57,9 +63,6 @@ nav {
           flex-direction: row;
   height: 50px;
   padding-top: 10px;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: nav;
 }
 
 nav a {
@@ -97,6 +100,10 @@ h1 {
   text-align: center;
 }
 
+.fot1 img {
+  max-width: 100%;
+}
+
 .section2, .section3 {
   color: #3a3535;
   text-align: center;
@@ -113,11 +120,8 @@ h1 {
   text-align: center;
 }
 
-body {
-  background-color: #b3d6b3;
-  top: 0%;
-  margin: 0%;
-  padding: 0%;
+.fot2 {
+  margin-bottom: 2rem;
 }
 
 /* agregando transicion y animacion */
@@ -136,6 +140,7 @@ header:hover {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
   position: relative;
+  grid-area: col;
 }
 
 .coll div {
@@ -207,12 +212,11 @@ a img {
 .teo {
   width: 250px;
   padding: 10px;
+  margin-bottom: 2rem;
 }
 
-main {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: main;
+#z {
+  z-index: 99;
 }
 
 #contenedor {
